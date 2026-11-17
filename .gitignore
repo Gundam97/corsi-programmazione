@@ -8,3 +8,6 @@ out/
 
 # Sistema
 .DS_Store
+
+# Database SQLite generato da sql/esegui.sh
+sql/corso.db
