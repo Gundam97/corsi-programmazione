@@ -1,6 +1,7 @@
 # Corso di Java da zero
 
 Un percorso in 15 lezioni per imparare le basi di Java, dai primi passi alla programmazione a oggetti.
+
 Ogni lezione è un programma Java **eseguibile** e **commentato in italiano**: si legge il codice, si esegue, si confronta l'output con i commenti e poi si fanno gli esercizi in fondo al file.
 
 > Requisito: Java 17 o superiore (`java -version` per controllare).
@@ -9,9 +10,12 @@ Ogni lezione è un programma Java **eseguibile** e **commentato in italiano**: s
 
 ## Come eseguire le lezioni
 
+Tutti i comandi si lanciano dalla cartella `java/`.
+
 ### Da terminale (macOS / Linux)
 
 ```bash
+cd java
 ./esegui.sh          # elenco delle lezioni
 ./esegui.sh 1        # esegue la lezione 1
 ./esegui.sh tutte    # le esegue tutte in fila
@@ -30,8 +34,8 @@ Per le lezioni composte da più file conviene compilare tutto insieme:
 
 ### Con IntelliJ IDEA
 
-1. *File → Open* e scegli la cartella `corso-java-base`.
-2. Tasto destro su `src` → *Mark Directory as → Sources Root*.
+1. *File → Open* e scegli la cartella principale della repo (quella che contiene `java/` e `sql/`).
+2. Tasto destro su `java/src` → *Mark Directory as → Sources Root*.
 3. Imposta un JDK 17+ (*File → Project Structure → SDK*).
 4. Apri un file con il `main` e premi il triangolo verde ▶ accanto alla classe.
 
@@ -87,12 +91,12 @@ Ogni file con più classi indica in testa **l'ordine di lettura**.
 - **Le lezioni 7 → 11 sono una progressione unica:** classe → ereditarietà → astrazione → interfacce → polimorfismo. Se un concetto non è chiaro, conviene tornare indietro di una lezione invece di andare avanti.
 - **Gli esercizi** sono in fondo a ogni file, in ordine di difficoltà crescente. Lo studente può risolverli creando nuovi file nello stesso package.
 
-## Struttura del progetto
+## Struttura
 
 ```
-corso-java-base/
-├── README.md
-├── esegui.sh
+java/
+├── README.md        <- questo file
+├── esegui.sh        <- compila ed esegue le lezioni
 └── src/
     ├── lezione01_ciaomondo/
     ├── lezione02_variabili/
